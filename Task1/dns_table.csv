@@ -1,0 +1,7 @@
+Custom header value (HHMMSSID),Domain name,Resolved IP address
+b'19112100',bing.com.,192.168.1.11
+b'19112101',example.com.,192.168.1.11
+b'19112102',amazon.com.,192.168.1.11
+b'19112103',yahoo.com.,192.168.1.11
+b'19112104',google.com.,192.168.1.11
+b'19112105',github.com.,192.168.1.11
