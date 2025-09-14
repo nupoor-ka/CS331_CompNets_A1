@@ -4,7 +4,7 @@ from datetime import datetime
 from scapy.all import *
 import os
 
-allpkts = "C:/Users/nupoo/Downloads/Task 1/0.pcap" # first pcap, with all packets
+allpkts = "C:/Users/nupoo/Downloads/7.pcap" # first pcap, with all packets
 dnsq = "dns_queries.pcap" # pcap with dns queries
 dnsq_w_hdr = "dnsq_cli_hdr.pcap" # dns queries with custom client headers
 
