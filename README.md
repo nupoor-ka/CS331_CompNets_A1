@@ -8,10 +8,14 @@ Our fist step was filtering out the DNS queries from this file. For this, we use
 
 This repository has two python script files, _client.py_ and _server.py_. The original pcap file, say _input.pcap_ (here _0.pcap_), with all packets should be given to _client.py_. It will then filterout the DNS queries and store them in a separate file, _dns_queries.pcap_. It then opens this file, as an input file, and another output file, _dnsq_cli_hdr.pcap_. It parses through the DNS query packets and stores those packets with custom headers in the output file.
 
+
 <img width="777" height="281" alt="image" src="https://github.com/user-attachments/assets/0b763a2c-d77d-4cc2-bf8b-84f88d973707" />
+
 
 The file _dnsq_cli_hdr.pcap_ is now given as input to _server.py_. It reads the packets with the custom header and finds the IP address from the given pool following the specified rules and adds the extracted information in _ip_table.csv_.
 
+
 <img width="1068" height="283" alt="image" src="https://github.com/user-attachments/assets/8885f464-2f56-44e4-8f7b-28f75ef56f77" />
+
 
 To add the custom header right after DNS, we had to create a new layer using scapy, termed CustomHeader, and defined it on both the client and server side.
