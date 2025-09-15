@@ -6,7 +6,7 @@ We worked with file _7.pcap_. The sum of the last 3 digits of both our roll numb
 
 As a sanity check, and to understand how wireshark works, we used it to filter out the DNS queries from this file. For this, we used the filter _dns && dns.flags.response==0_. This was to understand the kind of information these files provided and how we could use wireshark for parsing them.
 
-This repository has two python script files, _client.py_ and _server.py_. The original pcap file, say _input.pcap_ (here _0.pcap_), with all packets should be given to _client.py_. It will then filterout the DNS queries and store them in a separate file, _dns_queries.pcap_. It then opens this file, as an input file, and another output file, _dnsq_cli_hdr.pcap_. It parses through the DNS query packets and stores those packets with custom headers in the output file.
+This repository has two python script files, _client.py_ and _server.py_. The original pcap file, say _input.pcap_ (here _7.pcap_), with all packets should be given to _client.py_. It will then filterout the DNS queries and store them in a separate file, _dns_queries.pcap_. It then opens this file, as an input file, and another output file, _dnsq_cli_hdr.pcap_. It parses through the DNS query packets and stores those packets with custom headers in the output file.
 
 ---
 
